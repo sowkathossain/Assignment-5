@@ -28,7 +28,7 @@ for(const callbtn of callbtns){
        creatDiv.innerHTML = `<div class="history bg-[#fafafa] p-3 mt-5">
                     <div class="flex items-center justify-between">
                         <div class="">
-                            <h2 class="font-semibold text-[16px]">${serviceName}</h2>
+                            <h2 class="font-semibold text-sm">${serviceName}</h2>
                             <h3>${serviceNumber}</h3>
                         </div>
                         <div>${time}</div>
