@@ -41,3 +41,18 @@ for(const callbtn of callbtns){
 
     })
 }
+
+// Copy Button functionality
+let copyClicked = 0;
+btnCopy = document.querySelectorAll('.copy-btn');
+for(let copy of btnCopy){
+    copy.addEventListener('click',function(){
+    copyClicked = copyClicked + 1;
+    document.getElementById('copy-count').innerText = copyClicked;
+    const card = copy.parentNode.parentNode;
+    const serviceNumber = card.querySelector('.service-number').innerText;
+    navigator.clipboard.writeText(serviceNumber);
+    alert(`number has been copied ${serviceNumber}`);
+    })
+}
+
