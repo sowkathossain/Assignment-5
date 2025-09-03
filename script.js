@@ -55,4 +55,7 @@ for(let copy of btnCopy){
     alert(`number has been copied ${serviceNumber}`);
     })
 }
-
+// Clear Button Function
+document.getElementById('clear-btn').addEventListener('click',function(){
+    document.getElementById('history').style.display = 'none';
+})
